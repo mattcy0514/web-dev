@@ -1,0 +1,91 @@
+* {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    background-image: url("../img/home.png");
+    background-attachment: fixed;
+    background-position: center;
+}
+#nav {
+    width: 1920px;
+    height: 112px;
+    display: flex;
+    align-items: flex-end;
+}
+#title {
+    margin-left: 32px;
+}
+#title h1 {
+    margin: auto;
+    /* margin: auto ?? */
+    font-size: 72px;
+    text-align: center;
+}
+#menu {
+    position: absolute;
+    right: 0px;
+}
+#menu li {
+    display: inline;
+    margin: 72px;
+}
+#menu li a {
+    text-decoration: none;
+    font-size: 32px;
+}
+#menu li a:hover {
+    color: #FFCC00;
+    text-decoration: underline;
+}
+#main {
+    width: 1920px;
+    height: 936px;
+}
+#quote {
+    padding-top: 280px;
+    box-sizing: border-box;
+}
+#quote p {
+    text-align: center;
+    margin: 80px auto 0 auto;
+    font-size: 32px;
+    font-style: italic;
+}
+#quote hr {
+    margin: 8px auto;
+    border: none;
+    height: 1px;    
+    width: 280px;
+    background: white;
+    color: white;
+}
+#play {
+    display: flex;
+    justify-content: center;
+}
+#music {
+    width: 32px;
+    height: 32px;
+}
+#embed {
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#embed iframe {
+    box-shadow: 2px 2px 2px black;
+}
+#footer {
+    width: 1920px;
+    height: 32px;
+}
+#footer p {
+    text-align: center;
+    font-size: 16px;
+}

@@ -1,0 +1,73 @@
+* {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    background-image: url("../img/about.png");
+    background-attachment: fixed;
+    background-position: center;    
+}
+#nav {
+    width: 1920px;
+    height: 112px;
+    display: flex;
+    align-items: flex-end;
+}
+#title {
+    margin-left: 32px;
+}
+#title h1 {
+    margin: auto;
+    /* margin: auto ?? */
+    font-size: 72px;
+    text-align: center;
+}
+#menu {
+    position: absolute;
+    right: 0px;
+}
+#menu li {
+    display: inline;
+    margin: 72px;
+}
+#menu li a {
+    text-decoration: none;
+    font-size: 32px;
+}
+#menu .active {
+    color: #FFCC00;
+    text-decoration: underline;
+}
+#menu li a:hover {
+    color: #FFCC00;
+    text-decoration: underline;
+}
+#main {
+    width: 1920px;
+    height: 936px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about {
+    width: 960px;
+    height: 540px;
+    background: rgba(84,84,84,0.6);
+}
+#about p {
+    letter-spacing: 1px;
+    margin: 50px;
+    font-size: 24px;
+}
+#footer {
+    width: 1920px;
+    height: 32px;
+}
+#footer p {
+    text-align: center;
+    font-size: 16px;
+}

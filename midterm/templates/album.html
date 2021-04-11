@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The 1975's Album</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matt Chiang">
+    <meta name="description" content="The 1975's Album">
+    <meta name="keywords" content="The 1975, Band, UK, Album">
+
+    <link rel="stylesheet" href="../static/css/albumstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav">
+        <div id="title">
+            <h1>The 1975</h1>
+        </div>
+          <div id="menu">
+            <ul>
+                <li><a href="../templates/home.html">HOME</a></li>
+                <li><a href="../templates/about.html">ABOUT</a></li>
+                <li><a href="../templates/album.html">ALBUM</a></li>
+                <li><a href="../templates/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="album">
+            <div id="album1" class="album">
+                <p>2013</p>
+                <img src="../static/img/album-first.png">
+                <p>The 1975</p>
+            </div>
+            <div id="album2" class="album">
+                <p>2016</p>
+                <img src="../static/img/album-second.png">
+                <p>I like it when you sleep, for you are so beautiful yet so unware of it</p>
+            </div>
+            <div id="album3" class="album">
+                <p>2018</p>
+                <img src="../static/img/album-third.png">
+                <p>A Brief Inquiry Into Online Relationship</p>
+            </div>
+            <div id="album4" class="album">
+                <p>2020</p>
+                <img src="../static/img/album-fourth.png">
+                <p>Notes On A Conditional Form</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Copyright © 2021 Matt Chiang B10809024. All rights reserved.</p>
+    </div>
+</body>
+
+<script>
+    var s = document.getElementsByClassName("album");    
+    for (let i = 0; i < s.length; i++) {
+        for (let j = 0; j < 100; j++) {
+            setTimeout(function(){
+                s[i].style.opacity = ParametricBlend(j / 100);
+            }, (i + 1) * 1200 + j * 10);
+        }
+    }
+    function ParametricBlend(t) {
+        var sqt = t * t;
+        return sqt / (2 * (sqt - t) + 1);
+    }
+</script>
+</html>
